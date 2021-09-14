@@ -80,6 +80,30 @@ h6{
 .min-vh-100{
     min-height: 100vh;
 }
+.sec-padding{
+    padding: 80px 0;
+}
+
+/* ---------- section title ----------*/
+.section-title{
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-title h2{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.section-title h2::before{
+    content: attr(data-title);
+    display: block;
+    font-size: 24px;
+    color: var(--main-color);
+    font-family: var(--cursive-font);
+    font-weight: 400;
+    text-transform: capitalize;
+}
 
 /* ---------- buttons ----------*/
 .btn{
@@ -279,4 +303,10 @@ header .nav-toggler.active span::after{
 }
 .home-text p{
     margin: 0 0 30px;
+}
+
+/* ---------- about section ----------*/
+
+.about-section{
+    background-color: var(--dark-light);
 }
