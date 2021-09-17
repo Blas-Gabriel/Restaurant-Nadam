@@ -374,6 +374,7 @@ header .nav-toggler.active span::after{
 
 .menu-section{
     background-color: var(--dark);
+    padding-bottom: 60px;
 }
 .menu-section .section-title{
     margin-bottom: 40px;
@@ -430,6 +431,7 @@ header .nav-toggler.active span::after{
 .menu-item-title{
     display: flex;
     align-items: center;
+    max-width: calc(100% - 80px);
 }
 .menu-item-title h3{
     font-size: 16px;
@@ -452,3 +454,4 @@ header .nav-toggler.active span::after{
 .menu-item:hover .menu-item-price{
     color: var(--white);
 }
+
