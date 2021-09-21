@@ -52,3 +52,23 @@ menuTabs.addEventListener("click", function (e) {
     AOS.init();
   }
 });
+
+/*------------------- menu tabs to takes away ---------------------- */
+const menuTakeAway = document.querySelector(".menu-take-away");
+menuTakeAway.addEventListener("click", function (e) {
+  if (
+    e.target.classList.contains("menu-take-away-item") &&
+    !e.target.classList.contains("active")
+  ) {
+    const target = e.target.getAttribute("data-target");
+    menuTakeAway.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+    const menuTakeAwaySection = document.querySelector(".take-away-section");
+    menuTakeAwaySection
+      .querySelector(".menu-tab-content.active")
+      .classList.remove("active");
+    menuTakeAwaySection.querySelector(target).classList.add("active");
+    // animation on scroll
+    AOS.init();
+  }
+});
