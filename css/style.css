@@ -419,7 +419,6 @@ section{
 }
 .menu-item-title h3{
     font-size: 16px;
-    text-transform: capitalize;
     transition: color 0.3s ease;
 }
 .menu-item:hover .menu-item-title h3{
@@ -502,7 +501,6 @@ section{
 }
 .menu-item-title h3{
     font-size: 16px;
-    text-transform: capitalize;
     transition: color 0.3s ease;
 }
 .menu-item:hover .menu-item-title h3{
